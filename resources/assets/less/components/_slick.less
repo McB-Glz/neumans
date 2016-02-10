@@ -1,0 +1,121 @@
+.slick-slider, .slick-slide, .slick-list, .slick-track{
+	width: 100%;
+	height: 100%;
+}
+.slick-slide{
+	display: table !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	@media (max-width: @screen-xs-max) {
+		background-size: auto 100%;
+	}
+	.slide__content{
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.slide--attitudes{
+	background-image: url('../img/headers/work/behaviors/attitudes.jpg');
+}
+.slide--capabilities{
+	background-image: url('../img/headers/work/behaviors/capabilities.jpg');
+}
+.slide--individuals{
+	background-image: url('../img/headers/work/behaviors/individuals.jpg');
+}
+.slide--teams{
+	background-image: url('../img/headers/work/behaviors/teams.jpg');
+}
+.slide--systems{
+	background-image: url('../img/headers/work/behaviors/systems.jpg');
+}
+.slide--people{
+	background-image: url('../img/headers/work/change/people.jpg');
+}
+.slide--space{
+	background-image: url('../img/headers/work/change/space.jpg');
+}
+.slide--tech{
+	background-image: url('../img/headers/work/change/tech.jpg');
+}
+.slide--structure{
+	background-image: url('../img/headers/work/change/structure.jpg');
+}
+.slide--brand{
+	background-image: url('../img/headers/work/change/brand.jpg');
+}
+.slide--storytelling{
+	background-image: url('../img/headers/work/org/storytelling.jpg');
+}
+.slide--gamification{
+	background-image: url('../img/headers/work/org/gamification.jpg');
+}
+.slide--culture{
+	background-image: url('../img/headers/work/org/culture.jpg');
+}
+.slide--exp{
+	background-image: url('../img/headers/work/org/exp.jpg');
+}
+.slide--foresight{
+	background-image: url('../img/headers/work/org/foresight.jpg');
+}
+.slick-dots{	
+	bottom: 25px;
+	li button:before{
+		font-size: 15px;
+		color: white;
+	}
+}
+.slick-dots li.slick-active button:before{
+	color: white;
+}
+.slide__content{
+	text-align: center;
+	position: relative;
+	p{
+		color: white;
+		width: 70%;
+		margin: 0 auto;
+		@media (min-width: @screen-sm-min) {
+			font-size: 30px;
+		}
+	}
+	h3{
+		color: @neumans-main-green;
+		@media (min-width: @screen-sm-min) {
+			font-size: 120px;
+		}
+	}
+}
+.slick-slider--careers{
+	z-index: 5;
+	p{
+		text-align: center;
+		color: white;
+		font-size: 70px;
+		@media (max-width: @screen-xs-max) {
+			font-size: 40px;
+		}
+	}
+	h5{
+		text-align: center;
+		color: white;
+		font-size: 100px;
+		@media (max-width: @screen-xs-max) {
+			font-size: 60px;
+		}
+	}
+	.slick-slide{
+		padding: 100px 25px;
+		@media (min-width: @screen-lg-min) {
+			padding: 200px 100px;
+		}
+		@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+			padding: 150px 100px;
+		}
+		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+			padding: 80px;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+body{
+	font-family: 'teletyperegular';
+	font-weight: 300;
+	color: @neumans-main-black;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: 'bebas_neueregular';
+	color: @neumans-main-black;
+}
+
+b{
+	color: @neumans-main-green;
+}
+
+p, address{
+	@media (min-width: @screen-lg-min) {
+		font-size: 24px;
+	}
+	@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+		font-size: 20px;
+	}
+}
+
+#alerts, #success{
+	z-index: 1000;
+	position: fixed;
+	top: 65px;
+}
+
+.js-resize{
+	cursor: pointer;
+}
+
+.line--neumans{
+	margin: 25px 0;
+}
+
+.full-row{
+	.row{
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+}
+.pull-right{
+	@media (max-width: @screen-xs-max) {
+		float: none !important;
+	}
+}
+.dropdown-menu{
+	z-index: 1080;
+}

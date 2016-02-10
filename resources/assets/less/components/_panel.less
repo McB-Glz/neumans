@@ -1,0 +1,32 @@
+.panel--neumans{
+	.panel-heading{
+		padding: 15px 5px;
+	}
+	.panel-title{
+		font-family: 'teletyperegular';
+		font-size: 20px;
+		text-align: center;
+		@media (min-width: @screen-sm-min) {
+			font-size: 24px;
+		}
+		a{
+			text-decoration: none;
+			&:hover{
+				color: @neumans-main-green;
+				text-decoration: none;
+				background: none;
+			}
+		}
+	}
+	.panel-body{
+		h5{
+			font-family: 'teletyperegular';
+			color: @neumans-main-light-grey;
+			font-size: 16px;
+			text-align: center;
+			@media (min-width: @screen-sm-min) {
+				font-size: 20px;
+			}
+		}
+	}
+}

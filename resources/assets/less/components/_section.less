@@ -1,0 +1,633 @@
+.section{
+	position: relative;
+	transition: all .3s;
+}
+.section__overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5)
+}
+.section--header-home{
+	background-color: @neumans-main-green;
+	background-image: url('../img/headers/welcome.png');
+	background-repeat: no-repeat;
+	background-position: 30% 50%;
+	background-size: 113% auto;
+	.section--header-down-arrow{
+		i{
+			color: @neumans-main-grey;
+
+			&:hover{
+				color: white;
+			}
+		}
+	}
+}
+.section--header{
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: fixed;
+	top: 0;
+}
+.section--header-img{
+	height: 90%;
+	width: 500px;
+	text-align: center;
+	position: absolute;
+	top: 8%;
+	left: 50%;
+	z-index: 2;
+	margin-left: -250px;
+	img{
+		height: 100%;
+		width: auto;
+		margin: 0 auto;
+	}
+	@media (min-width: @screen-lg-min) {
+		top:12%;
+		height: 80%;
+	}
+	@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+		top: 5%;
+	}
+}
+.section--header-contact{
+	position: relative !important;
+}
+.section--disclaimer{
+	width: 500px;
+	text-align: center;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	margin-left: -250px;
+	@media (min-width: @screen-md-min){
+		top: 65%;
+	}
+	@media (max-width: @screen-xs-max){
+		width: 300px;
+		margin-left: -150px;
+	}
+	p{
+		text-transform: uppercase;
+		color: white;
+		font-size: 30px;
+		padding: 50px;
+		@media (max-width: @screen-xs-max) {
+			font-size: 20px;
+		}
+	}
+}
+.section--infinity{
+	
+}
+.section--careers-app{
+	margin-top: 100px;
+	h2{
+		text-align: left !important;
+	}
+}
+.section--header-work{
+	background-image: url('../img/headers/work/foto-1.jpg');
+	.section__content{
+		text-align: center;
+		position: relative;
+		margin: 0 auto;
+		h2{
+			color: @neumans-main-green;
+			text-align: center;
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+}
+.section--header-behaviors{
+	background-image: url('../img/headers/work/behaviors/behavorial-design.jpg');
+}
+.section--header-change{
+	background-image: url('../img/headers/work/change/change.jpg');
+}
+.section--header-org{
+	background-image: url('../img/headers/work/org/org.jpg');
+}
+.section--header-behaviors, .section--header-change, .section--header-org{
+	.section__content{
+		text-align: center;
+		position: relative;
+		width: 90%;
+		margin: 0 auto;
+		h2{
+			color: @neumans-main-green;
+			@media (min-width: @screen-sm-min) {
+				font-size: 90px;
+				margin-top: 80px;
+				margin-bottom: 80px;
+			}
+		}
+		p{
+			color: white;
+		}
+	}
+}
+.section--header-contact{
+	margin-top: 65px;
+	.map{
+		width: 100%;
+		height: 100%;
+	}
+}
+.section--header-careers{
+	background-image: url('../img/headers/careers.jpg');
+}
+.section--header-nav{
+	position: absolute;
+	p{
+		display: inline-block;
+		font-size: 14px;
+		@media (max-width: @screen-xs-max) {
+			text-align: center;
+			font-size: 12px;
+			width: 80%;
+		}
+	}
+	.prev{
+		float: left;
+		width: 25%;
+		text-align: left;
+		@media (max-width: @screen-xs-max) {
+			width: 45%;
+		}
+	}
+	.next{
+		float: right;
+		width: 25%;
+		text-align: right;
+		@media (max-width: @screen-xs-max) {
+			width: 45%;
+		}
+	}
+	width: 100%;
+	left: 0;
+	bottom: 25px;
+	i{
+		padding: 8px;
+		@media (min-width: @screen-sm-min) {
+			padding: 15px;
+		}
+	}
+	a{
+		text-align: center;
+		color: white;
+		cursor: pointer;
+		&:hover{
+			color: @neumans-main-green;
+			text-decoration: none;
+		}
+
+	}
+}
+.section--header-down-arrow{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 50%;
+	margin-left: -20px;
+	bottom: 25px;
+	text-align: center;
+	z-index: 15;
+	a{
+		display: inline;
+	}
+	i{
+		color: white;
+		&:hover{
+			color: @neumans-main-green;
+		}
+	}
+}
+.section--table{
+	display: table;
+	width: 100%;
+	.section__content, .section__title{
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.section__content--padding{
+	padding: 25px 0;
+}
+.section--white{
+	background: white;
+}
+.section--home{
+	background-image: url('../img/home.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	.section__content{
+		text-align: center;
+		position: relative;
+		width: 90%;
+		margin: 0 auto;
+		h3{
+			color: white;
+			@media (min-width: @screen-sm-min) {
+				font-size: 48px;
+			}
+		}
+		h4{
+			color: @neumans-main-green;
+			padding-top: 50px;
+			@media (min-width: @screen-sm-min) {
+				font-size: 36px;
+			}
+		}
+		h2{
+			color: @neumans-main-green;
+		}
+	}
+}
+.section-anchor{
+	color: @neumans-main-green;
+	cursor: pointer;
+	color: white;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+.section__content--animated{
+	height: auto;
+	transition: all .3s;
+	color: white;
+	padding-top: 40px;
+	@media (min-width: @screen-sm-min) {
+		height: 0;
+		overflow: hidden;
+		padding-top: 20px;
+	}	
+}
+.section__title{
+	height: 200px;
+	h2{
+		text-align: center;
+		@media (min-width: @screen-sm-min) {
+			font-size: 54px;
+		}
+	}
+	p{
+		text-align: center;
+		padding-top: 25px;
+	}
+}
+.section__title--blog{
+	padding-top: 25px;
+	@media (min-width: @screen-sm-min) {
+		padding-top: 80px;
+	}
+}
+.section--green{
+	background: @neumans-main-green;
+}
+.section--black{
+	background: black;
+}
+.section--blog{
+	height: 200px !important;
+	@media (min-width: @screen-sm-min) {
+		height: 270px !important;
+	}
+}
+.section--img{
+	width: 100%;
+	position: relative;
+	text-align: center;
+	img{
+		display: inline;
+		margin: 0 auto;
+	}
+}
+.section__heading{
+	h2{
+		text-align: center;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		@media (min-width: @screen-sm-min) {
+			font-size: 66px;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+	}
+	p{
+		text-align: center;
+	}
+}
+.section__heading--big{
+	h2{
+		text-align: center;
+		margin-top: 80px !important;
+		margin-bottom: 25px !important;
+		@media (min-width: @screen-sm-min) {
+			font-size: 90px;
+			margin-bottom: 25px !important;
+			margin-top: 80px !important;
+		}
+	}
+}
+.section__heading--bright{
+	color: @neumans-main-green;
+}
+.section__heading--big{
+	@media (min-width: @screen-sm-min) {
+		font-size: 80px !important;
+	}
+}
+.section__heading--small{
+	@media (min-width: @screen-sm-min) {
+		font-size: 40px !important;
+	}
+}
+// Section Grid
+.section-grid__single{
+	display: table;
+	cursor: pointer;
+	@media (max-width: @screen-xs-max) {
+		width: 100%;
+	}
+	@media (min-width: @screen-sm-min) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+.section-grid--home{
+	.section-grid__single__title a{
+		color: white;
+	}
+	&:hover{
+		.section-grid__single__title a{
+			color: @neumans-main-green;
+		}
+	}
+	&.section-grid__single--behaviors{
+		background-image: url('../img/bd.jpg');
+		background-size: 100% auto;
+		background-repeat: none;
+	}
+	&.section-grid__single--change{
+		background-image: url('../img/sc.jpg');
+		background-size: 100% auto;
+		background-repeat: none;
+	}
+	&.section-grid__single--org{
+		background-image: url('../img/org.jpg');
+		background-size: 100% auto;
+		background-repeat: none;
+	}
+	&.section-grid__single{
+		@media (max-width: @screen-xs-max) {
+			padding: 25px 0 45px 0;
+		}
+	}
+}
+.section-grid--works{
+	&.section-grid__single{
+		@media (max-width: @screen-xs-max) {
+			padding: 25px 0 45px 0;
+		}
+	}
+	.section-grid__single__text{
+		transition: all .3s;
+		@media (min-width: @screen-sm-min) {
+			display: none;
+		}
+	}
+	&:hover{
+		.section-grid__single__text{
+			display: block;
+		}
+	}
+}
+.section-grid__single--bg-hover{
+	&:hover{
+		background: @neumans-main-green;
+	}
+}
+.section-grid__single--odd{
+	background: #EDEDED;
+}
+.section-grid__content{
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+}
+.section-grid__single__title{
+	text-align: center;
+	@media (min-width: @screen-sm-min) {
+		font-size: 56px;
+	}
+	a{
+		text-decoration: none;
+		color: @neumans-main-black;
+		&:hover{
+			color: @neumans-main-black;
+		}
+	}
+}
+.section-grid__single__text{
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	transition: all .3s;
+}
+.section-grid--pillars{
+	.section-grid__single{
+		background-repeat: no-repeat;
+		background-position: center center;
+		@media (min-width: @screen-sm-min) {
+			&:hover{
+				.section-grid__single__text{
+					display: block;
+					color: @neumans-main-green;
+				}
+				.section-grid__single__title{
+					color: @neumans-main-green;
+				}
+			}
+		}
+		.section-grid__single__text{
+			@media (min-width: @screen-sm-min) {
+				display: none;
+			}
+			color: white;
+		}
+		.section-grid__single__title{
+			color: white;
+		}
+	}
+}
+.section-grid__single--empathy{
+	background-image: url('../img/headers/work/empathy.jpg');
+	cursor: initial !important;
+}
+.section-grid__single--iteration{
+	background-image: url('../img/headers/work/iteration.jpg');
+	cursor: initial !important;
+}
+.section-grid__single--positive{
+	background-image: url('../img/headers/work/positive.jpg');
+	cursor: initial !important;
+	@media (min-width: @screen-sm-min) {
+		background-position: center 15% !important;
+	}
+}
+.section__contact--hidden{
+	position: absolute;
+	top: 50%;
+	left: -68.6%;
+	margin-top: 0 !important;
+	.section__contact__nav{
+		display: none !important;
+	}
+}
+.section__contact{
+	@media (min-width: @screen-sm-min) {
+		height: 400px;
+		margin-top: -355px;
+		.section__contact--full{
+			display: none;
+			.row{
+				width: 100%;
+			}
+		}
+	}
+	margin-bottom: 100px;
+	.section__contact__form{
+		transition: all .3s;	
+		background: white;
+		overflow: hidden;
+		@media (min-width: @screen-sm-min) {
+			padding-left: 0;
+			padding-right: 0;
+			height: 400px;
+		}
+		i{
+			color: @neumans-main-green;
+		}
+		a{
+			&:hover{
+				color: @neumans-main-green !important;
+			}
+		}
+	}
+	.section__contact__info{
+		transition: all .3s;
+		background: @neumans-main-green;
+		overflow: hidden;
+		@media (min-width: @screen-sm-min) {
+			padding-left: 0;
+			padding-right: 0;
+			height: 400px;
+		}
+		h5{
+			font-size: 30px;
+		}
+		a{
+			display: block;
+			color: @neumans-main-black;
+			&:hover{
+				color: white;
+				text-decoration: none;
+			}
+			font-size: 16px;
+			@media (min-width: @screen-sm-min) {
+				font-size: 18px;
+			}
+		}
+		address{
+			font-size: 16px;
+			@media (min-width: @screen-sm-min) {
+				font-size: 18px;
+			}
+		}
+	}
+	.section__contact--full{
+		padding: 25px;
+		h4{
+			font-size: 40px;
+			@media (min-width: @screen-sm-min) {
+				font-size: 60px;
+			}
+		}
+	}
+	.section__contact--partial{
+		text-align: center;
+		padding: 70px 15px 0 15px;
+		i{
+			display: block;
+			margin: 25px 0;
+		}
+		h4{
+			text-align: center;
+			@media (min-width: @screen-sm-min) {
+				font-size: 40px;
+			}
+			@media (min-width: @screen-lg-min) {
+				font-size: 48px;
+			}
+		}
+		a{
+			font-size: 25px;
+			color: @neumans-main-black;
+			&:hover{
+				color: white;
+				text-decoration: none;
+			}
+		}
+	}
+	.section__contact__nav{
+		display: none;
+	}
+}
+@media (min-width: @screen-sm-min) {
+	.section__contact--open{
+		.section__contact--partial{
+			display: none;
+		}
+		.section__contact--full{
+			display: block;
+		}
+	}
+	.section__contact__nav{
+		display: block !important;
+		position: absolute;
+		top:0;
+		right: 0;
+		z-index: 5;
+		padding: 8px;
+		a{
+			color: @neumans-main-black;
+			&:hover{
+				color: white;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group{
+	border-top: none;
+}
+.js-img-hover{
+	cursor: pointer;
+}
+.section--space{
+	background: white;
+	height: 50px;
+	@media (min-width: @screen-sm-min) {
+		height: 80px;
+	}
+
+}
+#one, #two, #three{
+	transition: all .3s;
+}

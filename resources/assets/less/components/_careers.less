@@ -1,0 +1,41 @@
+.careers-grid{
+	.careers-grid__row{
+		border-top: 1px solid @neumans-main-grey;
+	}
+	.careers-grid__single{
+		text-align: center;
+		padding-top: 85px;
+		padding-bottom: 100px;
+		cursor: pointer;
+		&:hover{
+			background: @neumans-main-green;
+		}
+		@media (min-width: @screen-sm-min) {
+			&:nth-of-type(odd){
+				border-right: 1px solid @neumans-main-grey;
+			}
+		}
+		@media (max-width: @screen-xs-max) {
+			padding-top: 25px;
+			padding-bottom: 40px;
+			&:nth-of-type(odd){
+				border-bottom: 1px solid @neumans-main-grey;
+			}
+		}
+		h3{
+			margin-top: 15px;
+			margin-bottom: 15px;
+			@media (min-width: @screen-sm-min) {
+				font-size: 56px;
+			}
+		}
+		a{
+			color: @neumans-main-light-grey;
+			text-transform: uppercase;
+			&:hover{
+				color: @neumans-main-black;
+				text-decoration: none;
+			}
+		}
+	}
+}
